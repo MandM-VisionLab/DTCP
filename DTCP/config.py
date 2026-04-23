@@ -7,7 +7,7 @@ class GlobalConfig:
 	pred_len = 4 # future waypoints predicted
 
 	# data root
-	root_dir_all = "/data/mirzaie/dataset/tcp_carla_data"
+	root_dir_all = "/path/to/tcp_carla_data"
 
 	train_towns = ['town01', 'town03', 'town04',  'town06', ]
 	val_towns = ['town02', 'town05', 'town07', 'town10']
@@ -54,7 +54,7 @@ class GlobalConfig:
 	speed_weight = 0.05
 	value_weight = 0.001
 	features_weight = 0.05
-	div_weight = 0.0005
+	div_weight = 0.00005
 
 	rl_ckpt = "roach/log/ckpt_11833344.pth"
 
