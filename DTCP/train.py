@@ -233,7 +233,6 @@ if __name__ == "__main__":
 							check_val_every_n_epoch = args.val_every,
 							max_epochs = args.epochs
 							)
-	# resume_from_checkpoint = "./log/original/reproduce_S42_all_dataset/epoch=59-last.ckpt",
 
 	trainer.fit(DTCP_model, dataloader_train, dataloader_val)
 
