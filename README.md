@@ -11,6 +11,19 @@ This repository contains the official code for the paper **Interpretable Decisio
 
 We use the publicly available TCP dataset. Download it via [HuggingFace](https://huggingface.co/datasets/craigwu/tcp_carla_data) (reassemble the split archive with `cat tcp_carla_data_part_* > tcp_carla_data.zip`) or [Google Drive](https://drive.google.com/file/d/1HZxlSZ_wUVWkNTWMXXcSQxtYdT7GogSm/view?usp=sharing). The total dataset size is approximately 115 GB.
 
+## Evaluation
+First, launch the CARLA server:
+```bash
+cd CARLA_ROOT
+./CarlaUE4.sh --world-port=2000 -opengl
+```
+
+Then, set the required paths in `carla_eval.sh`.
+Start the evaluation:
+```bash
+sh carla_eval.sh
+```
+
 ## Citation
 If you use this work, please cite:
 If you use this work, please cite:
