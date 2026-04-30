@@ -67,7 +67,7 @@ def get_collision(p1, v1, p2, v2):
 
 
 class ROACHAgent(autonomous_agent.AutonomousAgent):
-	def setup(self, path_to_conf_file, ckpt="/home/mirzaie/work/tcp_0910/roach/log/ckpt_11833344.pth"):
+	def setup(self, path_to_conf_file, ckpt="/dtcp/roach/log/ckpt_11833344.pth"):
 		self._render_dict = None
 		self.supervision_dict = None
 		self._ckpt = ckpt
